@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/cketter/Downloads/klm-scint-master_July17/klmscint_top.ncd
+OUTFILE=/home/cketter/Downloads/klm-scint-master_July17/klmscint_top.bit
+FAMILY=Spartan6
+PART=xc6slx150t-3fgg676
+WORKINGDIR=/home/cketter/Downloads/klm-scint-master_July17
+LICENSE=ISE
+USER_INFO=176018512_208276174_210685983_860
