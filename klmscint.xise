@@ -972,7 +972,7 @@
     <property xil_pn:name="AES Initial Vector spartan6" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="AES Key (Hex String) spartan6" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Add I/O Buffers" xil_pn:value="true" xil_pn:valueState="default"/>
-    <property xil_pn:name="Allow Logic Optimization Across Hierarchy" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Allow Logic Optimization Across Hierarchy" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Allow SelectMAP Pins to Persist" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Allow Unexpanded Blocks" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Allow Unmatched LOC Constraints" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -980,7 +980,7 @@
     <property xil_pn:name="Analysis Effort Level" xil_pn:value="Standard" xil_pn:valueState="default"/>
     <property xil_pn:name="Asynchronous To Synchronous" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Auto Implementation Compile Order" xil_pn:value="true" xil_pn:valueState="default"/>
-    <property xil_pn:name="Auto Implementation Top" xil_pn:value="false" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Auto Implementation Top" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Automatic BRAM Packing" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Automatically Insert glbl Module in the Netlist" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Automatically Run Generate Target PROM/ACE File" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -993,7 +993,7 @@
     <property xil_pn:name="Change Device Speed To" xil_pn:value="-3" xil_pn:valueState="default"/>
     <property xil_pn:name="Change Device Speed To Post Trace" xil_pn:value="-3" xil_pn:valueState="default"/>
     <property xil_pn:name="Combinatorial Logic Optimization" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile SIMPRIM (Timing) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile UNISIM (Functional) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile XilinxCoreLib (CORE Generator) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
@@ -1030,11 +1030,11 @@
     <property xil_pn:name="Enable Debugging of Serial Mode BitStream" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable External Master Clock spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Hardware Co-Simulation" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="true" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Enable Message Filtering" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Message Filtering" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Multi-Pin Wake-Up Suspend Mode spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Enable Multi-Threading" xil_pn:value="2" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Enable Multi-Threading par spartan6" xil_pn:value="4" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Enable Multi-Threading" xil_pn:value="Off" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Multi-Threading par spartan6" xil_pn:value="Off" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Outputs (Output Events)" xil_pn:value="Default (5)" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Suspend/Wake Global Set/Reset spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Encrypt Bitstream spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -1046,7 +1046,7 @@
     <property xil_pn:name="Exclude Compilation of Deprecated EDK Cores" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Exclude Compilation of EDK Sub-Libraries" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Extra Cost Tables Map" xil_pn:value="0" xil_pn:valueState="default"/>
-    <property xil_pn:name="Extra Effort (Highest PAR level only)" xil_pn:value="Normal" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Extra Effort (Highest PAR level only)" xil_pn:value="Normal" xil_pn:valueState="non-default" xil_pn:x_locked="true"/>
     <property xil_pn:name="FPGA Start-Up Clock" xil_pn:value="CCLK" xil_pn:valueState="default"/>
     <property xil_pn:name="FSM Encoding Algorithm" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="FSM Style" xil_pn:value="LUT" xil_pn:valueState="default"/>
@@ -1060,19 +1060,19 @@
     <property xil_pn:name="Generate Architecture Only (No Entity Declaration)" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Asynchronous Delay Report" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Clock Region Report" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Generate Constraints Interaction Report" xil_pn:value="true" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Generate Constraints Interaction Report Post Trace" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Generate Constraints Interaction Report" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Constraints Interaction Report Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Datasheet Section" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Datasheet Section Post Trace" xil_pn:value="true" xil_pn:valueState="default"/>
-    <property xil_pn:name="Generate Detailed MAP Report" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Generate Detailed MAP Report" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Multiple Hierarchical Netlist Files" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Post-Place &amp; Route Power Report" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Post-Place &amp; Route Simulation Model" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate RTL Schematic" xil_pn:value="Yes" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate SAIF File for Power Optimization/Estimation Par" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generate Testbench File" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Generate Timegroups Section" xil_pn:value="true" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Generate Timegroups Section Post Trace" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Generate Timegroups Section" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Timegroups Section Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Generics, Parameters" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Global Optimization Goal" xil_pn:value="AllClockNets" xil_pn:valueState="default"/>
     <property xil_pn:name="Global Optimization map spartan6" xil_pn:value="Off" xil_pn:valueState="default"/>
@@ -1089,19 +1089,19 @@
     <property xil_pn:name="Include SIMPRIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Include UNISIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Include sdf_annotate task in Verilog File" xil_pn:value="true" xil_pn:valueState="default"/>
-    <property xil_pn:name="Incremental Compilation" xil_pn:value="false" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Incremental Compilation" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Insert Buffers to Prevent Pulse Swallowing" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Instantiation Template Target Language Xps" xil_pn:value="VHDL" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TCK" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TDI" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TDO" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TMS" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
-    <property xil_pn:name="Keep Hierarchy" xil_pn:value="Yes" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="LUT Combining Map" xil_pn:value="Auto" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Keep Hierarchy" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="LUT Combining Map" xil_pn:value="Off" xil_pn:valueState="default"/>
     <property xil_pn:name="LUT Combining Xst" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="Language" xil_pn:value="VHDL" xil_pn:valueState="default"/>
-    <property xil_pn:name="Last Applied Goal" xil_pn:value="Balanced" xil_pn:valueState="default"/>
-    <property xil_pn:name="Last Applied Strategy" xil_pn:value="Xilinx Default (unlocked)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Last Applied Goal" xil_pn:value="Timing Performance" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Last Applied Strategy" xil_pn:value="Performance with IOB Packing;/opt/xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6_performance_with_iobpacking.xds" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Last Unlock Status" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Launch SDK after Export" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Library for Verilog Sources" xil_pn:value="" xil_pn:valueState="default"/>
@@ -1126,8 +1126,8 @@
     <property xil_pn:name="Number of Clock Buffers" xil_pn:value="16" xil_pn:valueState="default"/>
     <property xil_pn:name="Number of Paths in Error/Verbose Report" xil_pn:value="3" xil_pn:valueState="default"/>
     <property xil_pn:name="Number of Paths in Error/Verbose Report Post Trace" xil_pn:value="3" xil_pn:valueState="default"/>
-    <property xil_pn:name="Optimization Effort spartan6" xil_pn:value="High" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Optimization Goal" xil_pn:value="Speed" xil_pn:valueState="default"/>
+    <property xil_pn:name="Optimization Effort spartan6" xil_pn:value="High" xil_pn:valueState="non-default" xil_pn:x_locked="true"/>
+    <property xil_pn:name="Optimization Goal" xil_pn:value="Speed" xil_pn:valueState="default" xil_pn:x_locked="true"/>
     <property xil_pn:name="Optimize Instantiated Primitives" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Bitgen Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Bitgen Command Line Options spartan6" xil_pn:value="" xil_pn:valueState="default"/>
@@ -1149,17 +1149,17 @@
     <property xil_pn:name="Output Extended Identifiers" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Output File Name" xil_pn:value="klmscint_top" xil_pn:valueState="default"/>
     <property xil_pn:name="Overwrite Compiled Libraries" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Pack I/O Registers into IOBs" xil_pn:value="Auto" xil_pn:valueState="default"/>
-    <property xil_pn:name="Pack I/O Registers/Latches into IOBs" xil_pn:value="Off" xil_pn:valueState="default"/>
+    <property xil_pn:name="Pack I/O Registers into IOBs" xil_pn:value="Yes" xil_pn:valueState="non-default" xil_pn:x_locked="true"/>
+    <property xil_pn:name="Pack I/O Registers/Latches into IOBs" xil_pn:value="For Inputs and Outputs" xil_pn:valueState="non-default" xil_pn:x_locked="true"/>
     <property xil_pn:name="Package" xil_pn:value="fgg676" xil_pn:valueState="default"/>
-    <property xil_pn:name="Perform Advanced Analysis" xil_pn:value="true" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Perform Advanced Analysis Post Trace" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Perform Advanced Analysis" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Perform Advanced Analysis Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Perform Timing-Driven Packing and Placement" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Place &amp; Route Effort Level (Overall)" xil_pn:value="High" xil_pn:valueState="default"/>
+    <property xil_pn:name="Place &amp; Route Effort Level (Overall)" xil_pn:value="High" xil_pn:valueState="default" xil_pn:x_locked="true"/>
     <property xil_pn:name="Place And Route Mode" xil_pn:value="Normal Place and Route" xil_pn:valueState="default"/>
     <property xil_pn:name="Place MultiBoot Settings into Bitstream spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Placer Effort Level Map" xil_pn:value="High" xil_pn:valueState="default"/>
-    <property xil_pn:name="Placer Extra Effort Map" xil_pn:value="Normal" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Placer Effort Level Map" xil_pn:value="High" xil_pn:valueState="default" xil_pn:x_locked="true"/>
+    <property xil_pn:name="Placer Extra Effort Map" xil_pn:value="Normal" xil_pn:valueState="non-default" xil_pn:x_locked="true"/>
     <property xil_pn:name="Port to be used" xil_pn:value="Auto - default" xil_pn:valueState="default"/>
     <property xil_pn:name="Post Map Simulation Model Name" xil_pn:value="klmscint_top_map.vhd" xil_pn:valueState="default"/>
     <property xil_pn:name="Post Place &amp; Route Simulation Model Name" xil_pn:value="klmscint_top_timesim.vhd" xil_pn:valueState="default"/>
@@ -1170,7 +1170,7 @@
     <property xil_pn:name="Power Reduction Xst" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Preferred Language" xil_pn:value="VHDL" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Produce Verbose Report" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Project Description" xil_pn:value="KLm Scintiillator FPGA design - TARGETX readout for Belle II upgrade" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Project Description" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store all values" xil_pn:valueState="default"/>
     <property xil_pn:name="RAM Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="RAM Style" xil_pn:value="Auto" xil_pn:valueState="default"/>
@@ -1179,7 +1179,7 @@
     <property xil_pn:name="Read Cores" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Reduce Control Sets" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="Regenerate Core" xil_pn:value="Under Current Project Setting" xil_pn:valueState="default"/>
-    <property xil_pn:name="Register Balancing" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="Register Balancing" xil_pn:value="Yes" xil_pn:valueState="non-default" xil_pn:x_locked="true"/>
     <property xil_pn:name="Register Duplication Map" xil_pn:value="Off" xil_pn:valueState="default"/>
     <property xil_pn:name="Register Duplication Xst" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Register Ordering spartan6" xil_pn:value="4" xil_pn:valueState="default"/>
@@ -1209,8 +1209,8 @@
     <property xil_pn:name="Run for Specified Time Translate" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Safe Implementation" xil_pn:value="No" xil_pn:valueState="default"/>
     <property xil_pn:name="Security" xil_pn:value="Enable Readback and Reconfiguration" xil_pn:valueState="default"/>
-    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/tb_readout_simple_top" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.tb_readout_simple_top" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Route" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="" xil_pn:valueState="default"/>
@@ -1228,14 +1228,14 @@
     <property xil_pn:name="Simulator" xil_pn:value="ISim (VHDL/Verilog)" xil_pn:valueState="default"/>
     <property xil_pn:name="Slice Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify 'define Macro Name and Value" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.tb_readout_simple_top" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Map" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-3" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Map spartan6" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
-    <property xil_pn:name="Target Simulator" xil_pn:value="NC-Sim VHDL" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Target Simulator" xil_pn:value="Please Specify" xil_pn:valueState="default"/>
     <property xil_pn:name="Timing Mode Map" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
     <property xil_pn:name="Timing Mode Par" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
     <property xil_pn:name="Top-Level Module Name in Output Netlist" xil_pn:value="" xil_pn:valueState="default"/>
@@ -1264,22 +1264,22 @@
     <property xil_pn:name="Use Synchronous Reset" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Synchronous Set" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Synthesis Constraints File" xil_pn:value="true" xil_pn:valueState="default"/>
-    <property xil_pn:name="User Browsed Strategy Files" xil_pn:value="/home/share/install/Xilinx/14.7/ISE_DS/ISE/data/default.xds" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="User Browsed Strategy Files" xil_pn:value="/opt/xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6_performance_with_iobpacking.xds" xil_pn:valueState="non-default"/>
     <property xil_pn:name="UserID Code (8 Digit Hexadecimal)" xil_pn:value="0xFFFFFFFF" xil_pn:valueState="default"/>
     <property xil_pn:name="VCCAUX Voltage Level spartan6" xil_pn:value="2.5V" xil_pn:valueState="default"/>
-    <property xil_pn:name="VHDL Source Analysis Standard" xil_pn:value="VHDL-200X" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="VHDL Source Analysis Standard" xil_pn:value="VHDL-93" xil_pn:valueState="default"/>
     <property xil_pn:name="Value Range Check" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Verilog Macros" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Wait for DCM and PLL Lock (Output Events) spartan6" xil_pn:value="Default (NoWait)" xil_pn:valueState="default"/>
     <property xil_pn:name="Wakeup Clock spartan6" xil_pn:value="Startup Clock" xil_pn:valueState="default"/>
     <property xil_pn:name="Watchdog Timer Value spartan6" xil_pn:value="0xFFFF" xil_pn:valueState="default"/>
     <property xil_pn:name="Working Directory" xil_pn:value="." xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Write Timing Constraints" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Write Timing Constraints" xil_pn:value="false" xil_pn:valueState="default"/>
     <!--                                                                                  -->
     <!-- The following properties are for internal use only. These should not be modified.-->
     <!--                                                                                  -->
     <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|tb_readout_simple_top|behavior" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="PROP_DesignName" xil_pn:value="klmscint" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_DesignName" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_DevFamilyPMName" xil_pn:value="spartan6" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_FPGAConfiguration" xil_pn:value="FPGAConfiguration" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostMapSimTop" xil_pn:value="" xil_pn:valueState="default"/>
@@ -1287,8 +1287,8 @@
     <property xil_pn:name="PROP_PostSynthSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PreSynthesis" xil_pn:value="PreSynthesis" xil_pn:valueState="default"/>
-    <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2018-03-02T13:32:02" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="3E498ACB8578A35082B8B8C6E4C2A884" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2018-08-06T15:45:20" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="2740DE928EFB6A4C462703A01F722683" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWorkingDirLocWRTProjDir" xil_pn:value="Same" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWorkingDirUsed" xil_pn:value="No" xil_pn:valueState="non-default"/>
   </properties>

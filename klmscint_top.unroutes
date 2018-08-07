@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Jul 18 11:14:07 2018
+Mon Aug  6 18:19:05 2018
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 200 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 180 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    TDC_DONE<0>_IBUF
@@ -28,26 +28,6 @@ WARNING:ParHelpers:361 - There are 200 loadless signals in this design. This des
    TDC_MON_TIMING<7>_IBUF
    TDC_MON_TIMING<8>_IBUF
    TDC_MON_TIMING<9>_IBUF
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[10].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[10].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[1].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[1].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[2].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[2].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[3].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[3].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[4].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[4].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[5].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[5].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[6].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[6].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[7].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[7].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[8].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[8].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[9].tdc_ch_ins/fifo_ins/Mram_dpram_t1_RAMD_D1_O
-   klm_scrod_trig_interface/conc_intfc_ins/tdc_ins/TDC_CH_GEN[9].tdc_ch_ins/fifo_ins/Mram_dpram_t2_RAMD_D1_O
    klm_scrod_trig_interface/run_ctrl_ins/u_runctrl_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM100_RAMD_O
    klm_scrod_trig_interface/run_ctrl_ins/u_runctrl_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM101_RAMD_O
    klm_scrod_trig_interface/run_ctrl_ins/u_runctrl_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM102_RAMD_O

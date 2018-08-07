@@ -19,10 +19,14 @@
          <ClosedNode>/ip_udp_tx_block_test - behavior |home|isar|klmscint|source|interfaces|eth|ip_udp_tx_block_test.vhd</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_simple_top.vhd</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/inst_pulse_extent - pulse_transition - Behavioral</ClosedNode>
-         <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/klm_scrod_trig_interface - klm_scrod - behave</ClosedNode>
+         <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/klm_scrod_trig_interface - klm_scrod - behave/aurora_ins - klm_aurora_intfc - MAPPED</ClosedNode>
+         <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/klm_scrod_trig_interface - klm_scrod - behave/b2tt_ins - b2tt - implementation</ClosedNode>
+         <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/klm_scrod_trig_interface - klm_scrod - behave/conc_intfc_ins - conc_intfc - behave</ClosedNode>
+         <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/klm_scrod_trig_interface - klm_scrod - behave/run_ctrl_ins - run_ctrl - behave</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/map_clock_gen - clock_gen - Behavioral</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/u_SerialDataRoutDemux - SerialDataRoutDemux - Behavioral</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/u_WaveformPedcalcDSP - waveformpedcalcdsp - Behavioral</ClosedNode>
+         <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/u_ethernet_readout_interface - ethernet_readout_interface - Behavioral</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/u_trigger_scaler_single_channel_w_timing_gen - trigger_scaler_single_channel_w_timing_gen - Behavioral</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/u_wavepedsub - WaveformPedsubDSP - Behavioral</ClosedNode>
          <ClosedNode>/klmscint_top - Behavioral |home|cketter|Downloads|klm-scint-master_July17|source|main|klmscint_top.vhd/uut_pedram - SRAMscheduler - Behavioral</ClosedNode>
@@ -83,13 +87,13 @@
          <ClosedNode>/waveformpedcalcdsp - Behavioral |home|isar|klmscint|source|WaveformPedcalcDSP.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>klmscint_top - Behavioral (/home/cketter/Downloads/klm-scint-master_July17/source/main/klmscint_top.vhd)</SelectedItem>
+         <SelectedItem>b2tt_ins - b2tt - implementation (/home/cketter/Downloads/klm-scint-master_July17/source/interfaces/klm_scrod/b2tt/b2tt/b2tt.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000397000000020000000000000000000000000200000064ffffffff000000810000000300000002000003970000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000003eb000000020000000000000000000000000200000064ffffffff000000810000000300000002000003eb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>klmscint_top - Behavioral (/home/cketter/Downloads/klm-scint-master_July17/source/main/klmscint_top.vhd)</CurrentItem>
+      <CurrentItem>b2tt_ins - b2tt - implementation (/home/cketter/Downloads/klm-scint-master_July17/source/interfaces/klm_scrod/b2tt/b2tt/b2tt.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -100,26 +104,26 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000292000000010000000100000000000000000000000064ffffffff000000810000000000000001000002920000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>pin_mappings_SCROD_revA5_TX_MB_REVC.ucf</SelectedItem>
+         <SelectedItem>ipcore/tri_mode_eth_mac_v5_5/example_design/axi_ipif/tri_mode_eth_mac_v5_5_counter_f.vhd</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >104</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000001010000000000000000000000000000000000000552000000040101000100000000000000000000000064ffffffff000000810000000000000004000001b20000000100000000000000bb00000001000000000000006700000001000000000000027e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000010000000000000000000000000000000000000543000000040101000100000000000000000000000064ffffffff000000810000000000000004000001a30000000100000000000000bb00000001000000000000006700000001000000000000027e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>pin_mappings_SCROD_revA5_TX_MB_REVC.ucf</CurrentItem>
+      <CurrentItem>ipcore/tri_mode_eth_mac_v5_5/example_design/axi_ipif/tri_mode_eth_mac_v5_5_counter_f.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -143,13 +147,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Design Summary/Reports</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000283000000010000000100000000000000000000000064ffffffff000000810000000000000001000002830000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000292000000010000000100000000000000000000000064ffffffff000000810000000000000001000002920000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Summary/Reports</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
       <ClosedNodes>

@@ -1,14 +1,14 @@
-/home/cketter/Downloads/klm-scint-master_July17/klmscint_top.ngc 1531937375
+/home/cketter/Downloads/klm-scint-master_July17/klmscint_top.ngc 1533615047
+ipcore/rcl_autoinit_fifo.ngc 1531874941
+ipcore/txtrig_bram.ngc 1531875012
+ipcore/kpp_trig_fifo1.ngc 1531877505
 ipcore/trig_fifo.ngc 1531875594
 ipcore/daq_fifo.ngc 1531875699
 ipcore/runctrl_fifo_w32_r32.ngc 1531877860
-ipcore/kpp_trig_fifo1.ngc 1531877505
 ipcore/blk_mem_gen_v7_3.ngc 1531875911
 ipcore/qt_fifo.ngc 1531876166
 ipcore/udp_wavtx_fifo_w32r8.ngc 1531876952
 ipcore/cmdrxmux_w32r32.ngc 1531877733
 ipcore/udp_stattx_fifo_wr32r8.ngc 1531877377
 ipcore/srout_bram_blkmem.ngc 1531876047
-ipcore/rcl_autoinit_fifo.ngc 1531874941
-ipcore/txtrig_bram.ngc 1531875012
 OK
