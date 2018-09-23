@@ -1,6 +1,6 @@
 #ChipScope Pro Analyzer Project File, Version 3.0
 #Thu Jul 27 15:56:09 IST 2006
-device.1.configFileDir=/home/cketter/Downloads/klm-scint-master_July17/ipcore/pcs_pma_s6_gtpwizard/implement/
+device.1.configFileDir=/home/isar/klmscint/ipcore/pcs_pma_s6_gtpwizard/implement/
 device.1.configFilename=pcs_pma_s6_gtpwizard_top.bit
 deviceChain.deviceName0=System_ACE
 deviceChain.deviceName1=XC6SLX150T

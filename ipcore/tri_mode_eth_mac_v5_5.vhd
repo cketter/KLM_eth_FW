@@ -7,17 +7,17 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: tri_mode_eth_mac_v5_5.vhd
--- /___/   /\     Timestamp: Tue Jul 17 15:14:41 2018
+-- /___/   /\     Timestamp: Mon Aug 20 15:22:46 2018
 -- \   \  /  \ 
 --  \___\/\___\
 --             
--- Command	: -w -sim -ofmt vhdl /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.ngc /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.vhd 
+-- Command	: -w -sim -ofmt vhdl /home/isar/klmscint/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.ngc /home/isar/klmscint/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.vhd 
 -- Device	: 6slx150tfgg676-3
--- Input file	: /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.ngc
--- Output file	: /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.vhd
+-- Input file	: /home/isar/klmscint/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.ngc
+-- Output file	: /home/isar/klmscint/ipcore/tmp/_cg/tri_mode_eth_mac_v5_5.vhd
 -- # of Entities	: 1
 -- Design Name	: tri_mode_eth_mac_v5_5
--- Xilinx	: /opt/xilinx/14.7/ISE_DS/ISE/
+-- Xilinx	: /opt/Xilinx/14.7/ISE_DS/ISE/
 --             
 -- Purpose:    
 --     This VHDL netlist is a verification model and uses simulation 

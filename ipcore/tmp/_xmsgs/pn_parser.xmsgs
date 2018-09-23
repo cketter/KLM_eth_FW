@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/cketter/Downloads/klm-scint-master_July17/ipcore/cmdrxmux_w32r32.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/isar/klmscint/ipcore/tri_mode_eth_mac_v5_5.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

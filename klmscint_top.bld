@@ -1,30 +1,76 @@
 Release 14.7 ngdbuild P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -sd ipcore -sd ipcore/pcs_pma_s6_gtpwizard/implement -nt timestamp
--uc source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf -p
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -filter
+iseconfig/filter.filter -intstyle ise -dd _ngo -sd ipcore -sd
+ipcore/pcs_pma_s6_gtpwizard/implement -nt timestamp -uc
+source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf -p
 xc6slx150t-fgg676-3 klmscint_top.ngc klmscint_top.ngd
 
-Reading NGO file
-"/home/cketter/Downloads/klm-scint-master_July17/klmscint_top.ngc" ...
-Loading design module "ipcore/rcl_autoinit_fifo.ngc"...
-Loading design module "ipcore/txtrig_bram.ngc"...
-Loading design module "ipcore/kpp_trig_fifo1.ngc"...
+Reading NGO file "/home/cketter/isar_eth_FW/klmscint/klmscint_top.ngc" ...
+Loading design module "ipcore/tx_fifo.ngc"...
+Loading design module "ipcore/tri_mode_eth_mac_v5_5.ngc"...
+Loading design module "ipcore/pcs_pma.ngc"...
+Loading design module "ipcore/eth_head_fifo.ngc"...
+Loading design module "ipcore/ip_rx_bram.ngc"...
+Loading design module "ipcore/udp_cmdrx_wr8rd32.ngc"...
+Loading design module "ipcore/cmdrxmux_w32r32.ngc"...
+Loading design module "ipcore/udp_wavtx_fifo_w32r8.ngc"...
+Loading design module "ipcore/udp_stattx_fifo_wr32r8.ngc"...
 Loading design module "ipcore/trig_fifo.ngc"...
 Loading design module "ipcore/daq_fifo.ngc"...
 Loading design module "ipcore/runctrl_fifo_w32_r32.ngc"...
-Loading design module "ipcore/blk_mem_gen_v7_3.ngc"...
+Loading design module "ipcore/kpp_trig_fifo1.ngc"...
 Loading design module "ipcore/qt_fifo.ngc"...
-Loading design module "ipcore/udp_wavtx_fifo_w32r8.ngc"...
-Loading design module "ipcore/cmdrxmux_w32r32.ngc"...
-Loading design module "ipcore/udp_stattx_fifo_wr32r8.ngc"...
-Loading design module "ipcore/srout_bram_blkmem.ngc"...
+Loading design module "ipcore/rcl_autoinit_fifo.ngc"...
+Loading design module "ipcore/txtrig_bram.ngc"...
 Gathering constraint information from source properties...
 Done.
+INFO:NgdBuild:889 - Pad net 'klm_scrod_trig_interface/ftsw_aux' is not connected
+   to an external port in this design.  A new port 'ftsw_aux' has been added and
+   is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'klm_scrod_trig_interface/mgttxdis<1>' is not
+   connected to an external port in this design.  A new port 'mgttxdis<1>_x' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'klm_scrod_trig_interface/mgtmod2<1>' is not
+   connected to an external port in this design.  A new port 'mgtmod2<1>_x' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'klm_scrod_trig_interface/mgtmod1<1>' is not
+   connected to an external port in this design.  A new port 'mgtmod1<1>_x' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'klm_scrod_trig_interface/mgttxp' is not connected
+   to an external port in this design.  A new port 'mgttxp_x' has been added and
+   is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'klm_scrod_trig_interface/mgttxn' is not connected
+   to an external port in this design.  A new port 'mgttxn_x' has been added and
+   is connected to this signal.
 
 Annotating constraints to design from ucf file
 "source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf" ...
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
 WARNING:NgdBuild - The value of SIM_DEVICE on instance
    'klm_scrod_trig_interface/b2tt_ins/map_fifo/map_ram' of type RAMB16BWER has
    been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
@@ -33,11 +79,6 @@ WARNING:NgdBuild - The value of SIM_DEVICE on instance
    the source netlist or constraint file.
 Resolving constraint associations...
 Checking Constraint Associations...
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_FPGA_CLK = PERIOD
-   "FPGA_CLK" 15.7220 ns high 50%;>
-   [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(65)]: Unable to
-   find an active 'TNM' or 'TimeGrp' constraint named 'FPGA_CLK'.
-
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_CCD_TDC2SYS = FROM
    "SYS_CLK_GRP" TO "SYS_CLK2X_GRP" TS_SYS_CLK2X DATAPATHONLY;>
    [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(96)]: Unable to
@@ -49,6 +90,36 @@ WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_CCD_SYS2TDC = FROM
    [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(98)]: Unable to
    find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'SYS_CLK2X_GRP'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_gtxtocpu" = FROM
+   "clk_gtx" TO "clk_axi" TIG;>
+   [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(680)]: Unable to
+   find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_cputogtx" = FROM
+   "clk_axi" TO "clk_gtx" TIG;>
+   [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(681)]: Unable to
+   find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_rd_to_wr"   =
+   FROM "tx_fifo_rd_to_wr" TO "clk_gtx" 7800 ps DATAPATHONLY;>
+   [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(698)]: Unable to
+   find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_wr_to_rd"   =
+   FROM "tx_fifo_wr_to_rd" TO clk_tx_mac 7800 ps DATAPATHONLY;>
+   [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(699)]: Unable to
+   find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_tx_mac'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_wr_to_rd"   =
+   FROM "rx_fifo_wr_to_rd" TO "clk_gtx" 7800 ps DATAPATHONLY;>
+   [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(716)]: Unable to
+   find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_rd_to_wr"   =
+   FROM "rx_fifo_rd_to_wr" TO "clk_rx" 7800 ps DATAPATHONLY;>
+   [source/constraints/pin_mappings_SCROD_revA5_TX_MB_REVC.ucf(717)]: Unable to
+   find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_rx'.
 
 WARNING:ConstraintSystem:56 - Constraint <TIMEGRP "ffs_except_axi"        = FFS
    EXCEPT "clock_generator_clkout1" "mdio_logic";>
@@ -69,106 +140,489 @@ WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_config_to_all"      =
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[0].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[1].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[2].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[3].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[4].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[5].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[6].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[7].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[8].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[9].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[10].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[11].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[12].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[13].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[14].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[15].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[16].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[17].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[18].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[19].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[20].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[21].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[22].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[23].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[24].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[25].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[26].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[27].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[28].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[29].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[30].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[31].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[32].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[33].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[34].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[35].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[36].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[37].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[38].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[39].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[40].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[41].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[42].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[43].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[44].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[45].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[46].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[47].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[48].trig_ch_FDCE_inst' has
-   unconnected output pin
-WARNING:NgdBuild:440 - FF primitive 'gen_ch_sel_logic[49].trig_ch_FDCE_inst' has
-   unconnected output pin
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'internal_trig_ctime<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'N85' has no driver
+WARNING:NgdBuild:452 - logical net 'u_ethernet_readout_interface/mgttxfault' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'u_ethernet_readout_interface/mgtmod0' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'u_ethernet_readout_interface/mgtlos' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/tx_eth_last_1'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/tx_statistics_s'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/rx_statistics_s'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/serial_response'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/s_axi_br
+   esp<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/s_axi_rr
+   esp<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/tx_axis_
+   fifo_tready' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/s_axi_aw
+   addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/s_axi_ar
+   addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/tx_fifo_status<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/tx_fifo_status<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/tx_fifo_status<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/tx_fifo_status<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/tx_fifo_overflow' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/rx_fifo_status<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/rx_fifo_status<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/rx_fifo_status<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/rx_fifo_status<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/user_side_FIFO/rx_axis_mac_tready' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/Bus2IP_BE<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/Bus2IP_BE<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/Bus2IP_BE<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/Bus2IP_BE<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECOD
+   ER/Address_In_Erly<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECOD
+   ER/Address_In_Erly<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECOD
+   ER/Address_In_Erly<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECOD
+   ER/Address_In_Erly<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'u_ethernet_readout_interface/gen_udp_block.u_eth_top/udp_1/eth_inst/trimac_f
+   ifo_block/trimac_block/axi4_lite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECOD
+   ER/Address_In_Erly<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<95>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<94>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<93>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<92>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<91>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<90>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<89>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<88>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<87>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<86>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<85>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<84>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<83>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<82>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<81>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<80>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<79>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<78>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<77>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<76>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<75>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<74>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<73>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<72>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<71>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<70>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<69>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<68>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<67>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<66>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<65>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<64>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<63>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<62>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<61>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<60>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<59>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<58>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<57>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<56>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<55>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<54>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<53>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<52>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<51>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<50>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<49>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<48>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<31>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<30>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<29>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<28>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<27>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<26>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<25>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<24>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<23>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<22>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<21>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<20>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<19>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<18>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<17>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<16>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<15>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<14>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<13>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<12>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<11>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<9>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<5>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<4>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<1>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_fifodata<0>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/rcl_dst_rdy_n' has
+   no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/cmin1_t<1><7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/cmin1_t<1><6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/cmin1_t<2><7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/cmin1_t<2><6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_3_to_1_21/
+   cmin1<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_3_to_1_12/
+   cmin1<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_3_to_1_12/
+   cmin1<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_3_to_1_12/
+   cmin1<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_3_to_1_11/
+   cmin1<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_3_to_1_11/
+   cmin1<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_4_to_1_13/
+   cmin1_t<2><7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/conc_intfc_ins/tmodr_ins/rpc_tom_ins/tom_4_to_1_13/
+   cmin1_t<2><6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/sta_ictrl<1>' has no driver
+WARNING:NgdBuild:478 - clock net klm_scrod_trig_interface/b2tt_ins/clk_inv with
+   clock driver
+   klm_scrod_trig_interface/b2tt_ins/gen_useextclk0.map_clk/map_invg drives no
+   clock pins
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/exprun<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<9>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<5>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<4>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<1>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/exprun<0>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/divclk1<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/divclk1<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/divclk2<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/divclk2<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<51>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<50>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<49>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<48>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<47>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<46>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<45>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<44>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<43>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<33>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<32>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/running'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/sig_semreset' has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/frame9'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'klm_scrod_trig_interface/b2tt_ins/fifordy'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/dbglink<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/bit10<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/bit10<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/jtag<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/jtag<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/jtag<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/jtagdbg<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/jtagdbg<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/jtagdbg<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/trgshort' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/cntlinkrst<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/clraddr' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/frame3' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/bsyreset' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_decode/dismask' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_encode/map_b2/validk' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_encode/map_b2/rd6p' has no driver
+WARNING:NgdBuild:452 - logical net
+   'klm_scrod_trig_interface/b2tt_ins/map_encode/map_b2/rd4p' has no driver
+WARNING:NgdBuild:478 - clock net map_clock_gen/dcmclkgen/CLK_OUT1 with clock
+   driver map_clock_gen/dcmclkgen/clkout1_buf drives no clock pins
 
 Partition Implementation Status
 -------------------------------
@@ -179,12 +633,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  57
+  Number of warnings: 234
 
-Total memory usage is 547180 kilobytes
+Total memory usage is 693564 kilobytes
 
 Writing NGD file "klmscint_top.ngd" ...
-Total REAL time to NGDBUILD completion:  19 sec
-Total CPU time to NGDBUILD completion:   19 sec
+Total REAL time to NGDBUILD completion:  41 sec
+Total CPU time to NGDBUILD completion:   40 sec
 
 Writing NGDBUILD log file "klmscint_top.bld"...

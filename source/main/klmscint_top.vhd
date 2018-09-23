@@ -41,8 +41,8 @@ entity klmscint_top is
 	   generic(
 		IS_SIM : string:= "NO";
     NUM_GTS                     : integer := 1;
---	DAQ_IFACE				: string :="Ethernet";  --main readout interface is ethernet -- still gets clock from FTSW for testing
-	DAQ_IFACE				: string :="KEKDAQ"; --the readout interface is KEK DAQ system
+	DAQ_IFACE				: string :="Ethernet";  --main readout interface is ethernet -- still gets clock from FTSW for testing
+--	DAQ_IFACE				: string :="KEKDAQ"; --the readout interface is KEK DAQ system
 	 	 -- uncomment one of these lines only to comiple with the given configuration
 	 HW_CONF						: string :="SA5_MBC_DCC_RC" 	 --SCROD A5, MB C, TXDC C, RHIC C
 	 );

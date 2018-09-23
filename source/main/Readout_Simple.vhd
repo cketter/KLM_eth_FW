@@ -162,8 +162,8 @@ trig_bram_addr<=std_logic_vector(to_unsigned(smp_cnt_l-lookback_i-win_cnt,9)) wh
 			else std_logic_vector(to_unsigned(512+smp_cnt_l-lookback_i-win_cnt,9));
 --trig_bram_data
 
-						hit_ctime_i<=to_integer(unsigned(trig_ctime_i))-(lookback_i+win_cnt) when to_integer(unsigned(trig_ctime_i))>(lookback_i+win_cnt)
-									else to_integer(unsigned(trig_ctime_i))+268435456-(lookback_i+win_cnt); -- take care of wraparound
+						hit_ctime_i<=to_integer(unsigned(trig_ctime_i))-(lookback_i+win_cnt)*4 when to_integer(unsigned(trig_ctime_i))>(lookback_i+win_cnt)*4
+									else to_integer(unsigned(trig_ctime_i))+268435456-(lookback_i+win_cnt)*4; -- take care of wraparound
 
 									
 gen_LKBK_triglogic : for i in 0 to 9 generate-- rearrange 

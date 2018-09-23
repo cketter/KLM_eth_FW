@@ -8,16 +8,19 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;runctrl_fifo_w32_r32&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;pcs_pma&apos; already exists in the project. Output products for this core may be overwritten.</arg>
 </msg>
 
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;runctrl_fifo_w32_r32&apos;...</arg>
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;pcs_pma&apos;...</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">BlackBox generator run option &apos;-ifmt&apos; found multiple times. Only the first occurence is considered.</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">BlackBox generator run option &apos;-iobuf&apos; found multiple times. Only the first occurence is considered.</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/runctrl_fifo_w32_r32/doc/fifo_generator_v9_3_vinfo.html with file from view xilinx_documentation</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">BlackBox generator run option &apos;-p&apos; found multiple times. Only the first occurence is considered.</arg>
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file /home/isar/klmscint/ipcore/tmp/_cg/pcs_pma/doc/pg047-gig-eth-pcs-pma.pdf with file from view xilinx_documentation</arg>
 </msg>
 
 <msg type="info" file="sim" num="949" delta="old" >Finished generation of ASY schematic symbol.

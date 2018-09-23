@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="pcs_pma">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-7-18T1:15:38</timestamp>
+    <timestamp>2018-8-21T1:33:9</timestamp>
     <pin polarity="Input" x="0" y="80" name="reset" />
     <pin polarity="Input" x="0" y="176" name="userclk" />
     <pin polarity="Input" x="0" y="208" name="userclk2" />

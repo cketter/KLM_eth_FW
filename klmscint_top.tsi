@@ -2,10 +2,10 @@
 Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
  
-/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -filter
-/home/cketter/Downloads/klm-scint-master_July17/iseconfig/filter.filter
--intstyle ise -v 3 -tsi klmscint_top.tsi -timegroups -a -s 3 -n 3 -fastpaths
--xml klmscint_top.twx klmscint_top.ncd -o klmscint_top.twr klmscint_top.pcf
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -filter
+/home/cketter/isar_eth_FW/klmscint/iseconfig/filter.filter -intstyle ise -v 3
+-tsi klmscint_top.tsi -timegroups -a -s 3 -n 3 -fastpaths -xml klmscint_top.twx
+klmscint_top.ncd -o klmscint_top.twr klmscint_top.pcf
 
 
 Design file:              klmscint_top.ncd
@@ -79,6 +79,6 @@ Clock Domain Overlap Report
 No overlap to report.
 
 
-Timespec interaction analysis completed Wed Jul 18 11:14:43 2018
+Timespec interaction analysis completed Thu Sep  6 11:27:28 2018
 --------------------------------------------------------------------------------
 

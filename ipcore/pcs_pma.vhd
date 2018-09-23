@@ -7,17 +7,17 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: pcs_pma.vhd
--- /___/   /\     Timestamp: Tue Jul 17 15:15:38 2018
+-- /___/   /\     Timestamp: Mon Aug 20 15:33:08 2018
 -- \   \  /  \ 
 --  \___\/\___\
 --             
--- Command	: -w -sim -ofmt vhdl /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/pcs_pma.ngc /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/pcs_pma.vhd 
+-- Command	: -w -sim -ofmt vhdl /home/isar/klmscint/ipcore/tmp/_cg/pcs_pma.ngc /home/isar/klmscint/ipcore/tmp/_cg/pcs_pma.vhd 
 -- Device	: 6slx150tfgg676-3
--- Input file	: /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/pcs_pma.ngc
--- Output file	: /home/cketter/Downloads/klm-scint-master_July17/ipcore/tmp/_cg/pcs_pma.vhd
+-- Input file	: /home/isar/klmscint/ipcore/tmp/_cg/pcs_pma.ngc
+-- Output file	: /home/isar/klmscint/ipcore/tmp/_cg/pcs_pma.vhd
 -- # of Entities	: 1
 -- Design Name	: pcs_pma
--- Xilinx	: /opt/xilinx/14.7/ISE_DS/ISE/
+-- Xilinx	: /opt/Xilinx/14.7/ISE_DS/ISE/
 --             
 -- Purpose:    
 --     This VHDL netlist is a verification model and uses simulation 
